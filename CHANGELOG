@@ -1,0 +1,4 @@
+Release 0.7:
+* Refactored Code, Added normal mode (activate with any command line parameter in *.LNK link files) which does just forward the events of all input devices (e.g. trackpoint and trackpad, this happens practically), added debug code and debug for delta events only, updated copyright messages and versions, updated VS project for relative paths of the Synaptics SDK.
+* Device will disable events for middle button events permanently (at least as long machine is not rebooted) to avoid multiple events (default event from driver and ours). Filtering events in NORMAL_MODE when multiple devices are connected (only on chnages). Added reset only mode with 2 parameters to restore original middle button behavior for the driver.
+* Added normal command line parsing with parameters, settings properties is done only in resetOnly and NORMAL_MODE
